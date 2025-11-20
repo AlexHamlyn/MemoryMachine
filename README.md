@@ -72,4 +72,6 @@ memoryMachine.cleanUp();
 memoryMachine.clear();
 ```
 
-The licence is provided to you in the git repo and I suggest reading it, Thanks for using my module!
+# Licence & Agreement
+Please read the MIT licence of this repo:
+https://github.com/AlexHamlyn/MemoryMachine/blob/main/LICENSE
