@@ -37,4 +37,39 @@ To install **MemoryMachine**, follow these steps:
 
 That's all you need to install the file.
 
+# Example Usage
+
+```typescript
+import { MemoryMachine } from "./MemoryMachine";
+
+// Create a new MemoryMachine instance
+const memoryMachine = new MemoryMachine();
+
+// Remember something
+memoryMachine.remember("username", "Alex", "user", 5); // ttl 5 Seconds
+memoryMachine.remember("highscore", 1200, "game");
+
+// Recall a memory
+const username = memoryMachine.recall<string>("username");
+console.log(username); // Output: Alex
+
+const highscore = memoryMachine.recall<number>("highscore");
+console.log(highscore); // Output: 1200
+
+// Check if a memory exists
+if (memoryMachine.exists("username")) {
+    console.log("Username memory exists!");
+}
+
+// Forget a memory
+memoryMachine.forget("highscore");
+console.log(memoryMachine.recall("highscore")); // Output: undefined
+
+// Clean up expired memories manually
+memoryMachine.cleanUp();
+
+// Clear all memories
+memoryMachine.clear();
+```
+
 The licence is provided to you in the git repo and I suggest reading it, Thanks for using my module!
