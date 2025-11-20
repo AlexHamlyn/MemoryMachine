@@ -26,14 +26,14 @@ To install **MemoryMachine**, follow these steps:
 2. **Update `tsconfig.json`**
   Open your tsconfig.json file and locate the typeRoots array. Add the following entry below "node_modules/@rbxts" (ensure there’s a comma at the end of       "node_modules/@rbxts"):
 
-  ```json
-  "node_modules/@lock-studio-games"
-  ```
+     ```json
+     "node_modules/@lock-studio-games"
+     ```
 
 3. **Install the module**
   Open your terminal in your project folder and run:
 
-  **`'npm install @lock-studio-games/memorymachine'`**
+     **`'npm install @lock-studio-games/memorymachine'`**
 
 That's all you need to install the file.
 
